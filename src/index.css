@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --neo-bg: #FAFAFA;
+  --neo-border: #141414;
+  --neo-accent: #FFC83D;
+  --neo-accent-dark: #E5B437;
+  --neo-surface: #FFFFFF;
+  --neo-shadow-color: #141414;
+}
+
+.dark {
+  --neo-bg: #141414;
+  --neo-border: #FAFAFA;
+  --neo-accent: #FFD566;
+  --neo-accent-dark: #FFC83D;
+  --neo-surface: #242424;
+  --neo-shadow-color: #FAFAFA;
+}
+
+@theme {
+  --color-neo-bg: var(--neo-bg);
+  --color-neo-border: var(--neo-border);
+  --color-neo-accent: var(--neo-accent);
+  --color-neo-accent-dark: var(--neo-accent-dark);
+  --color-neo-surface: var(--neo-surface);
+  
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "JetBrains Mono", monospace;
+  
+  --shadow-neo-hard: 4px 4px 0px var(--neo-shadow-color);
+  --shadow-neo-hard-hover: 2px 2px 0px var(--neo-shadow-color);
+}
+
+@layer base {
+  body {
+    @apply bg-neo-bg text-neo-border font-body transition-colors duration-300;
+  }
+}

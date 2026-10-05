@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+
+# Deployment
+.vercel
+
+# Generated artifacts
+*.xlsx
+
+# OS/editor
+.DS_Store
+Thumbs.db
