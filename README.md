@@ -58,4 +58,4 @@ npm run dev
 
 ## 📄 License
 
-Proprietary — internal use.
+MIT — see [LICENSE](LICENSE).
